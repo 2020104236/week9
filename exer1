@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+class fruit{
+public:
+	fruit() { 
+		price = 200; many = 2; day = 12;
+	}
+	fruit(float p, int n,int m) { 
+		price = p; many = n; day = m;
+	}
+	int many,day; float price;
+	void show_all(string a) {
+		cout<<a<< " : " << price<<"원 " << many<<"개 " << day<<"일 입고" << endl;
+	}
+	float show() {
+		return price * many;
+	}
+};
+void main() {
+	fruit apple, pear, peach,mango;
+	pear = fruit(300, 5,20);
+	peach = fruit(1000, 5,6);
+	mango = fruit(700, 8, 15);
+	apple.show_all("apple");
+	pear.show_all("pear");
+	peach.show_all("peach");
+	mango.show_all("mango");
+}
