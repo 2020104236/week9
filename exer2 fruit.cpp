@@ -1,6 +1,6 @@
 #include "furit.h"
 void fruit::show_all(string a) {
-	cout << a << " : " << price << "¿ø " << many << "°³ " << endl;
+	cout << a << " : " << price << "Â¿Ã¸ " << many << "Â°Â³ " << endl;
 }
 float fruit::show() {
 	return price * many;
